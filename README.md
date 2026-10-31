@@ -52,6 +52,8 @@ missing amount). No JavaScript: a `<progress>` element and HTMX.
   the missing amount in the mini-cart and on the cart page; a bigger
   quantity unlocks it. Skipped where the bar is off.
 
+What changed in each release: [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 OSL-3.0 or AFL-3.0, your choice: see `NOTICE.md`.

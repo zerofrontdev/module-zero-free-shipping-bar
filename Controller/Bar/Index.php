@@ -33,7 +33,8 @@ class Index implements PrivateFragmentActionInterface
      */
     public function execute()
     {
-        $place = (string) $this->request->getParam('place', 'checkout');
+        $place = $this->request->getParam('place', 'checkout');
+        $place = is_scalar($place) ? (string) $place : 'checkout';
         $result = $this->resultLayoutFactory->create();
         $result->addDefaultHandle();
         $result->getLayout()->getBlock(self::BLOCK_NAME)
